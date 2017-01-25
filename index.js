@@ -19,4 +19,10 @@ app.get('/', (request, response) => {
   })
 })
 
+app.get('/main', (request, response) => {  
+  response.render('layouts/main', {
+    body: 'Hello world'
+  })
+})
+
 app.listen(3000)
